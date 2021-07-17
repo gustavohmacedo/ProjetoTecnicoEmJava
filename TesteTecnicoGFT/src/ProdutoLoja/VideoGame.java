@@ -35,10 +35,6 @@ public class VideoGame extends Produto implements Imposto {
         this.modeloVideoGame = modeloVideoGame;
     }
 
-    public boolean isIsUsado() {
-        return this.isUsado;
-    }
-
     public boolean getIsUsado() {
         return this.isUsado;
     }

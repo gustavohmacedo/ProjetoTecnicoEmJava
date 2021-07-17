@@ -7,6 +7,8 @@ public class Loja {
     private String cnpjDaLoja;
     private List<Livro> livros;
     private List<VideoGame> videoGames;
+    private double somaPatrimonioLivro;
+    private double somaPatrimonioVideo;
 
     public Loja() {
     } // construtor default
@@ -93,14 +95,14 @@ public class Loja {
 
     }
 
-    // Em andamento na resolução...
     public double calculaPatrimonio() {
 
-     //getLivros().forEach(livro -> System.out.println(livro.getPrecoProduto() * livro.getQuantidadeProduto()));
+        getLivros().forEach(livro -> somaPatrimonioLivro += livro.getPrecoProduto() * livro.getQuantidadeProduto());
 
-     //getVideoGames().forEach(video -> System.out.println(video.getPrecoProduto() * video.getQuantidadeProduto()));
+        getVideoGames().forEach(video -> somaPatrimonioVideo += video.getPrecoProduto() * video.getQuantidadeProduto());
 
-        return 0;
+        return somaPatrimonioLivro + somaPatrimonioVideo;
+
     }
 
     @Override
