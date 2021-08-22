@@ -8,12 +8,9 @@ public class Bhaskara {
 
         Scanner scan = new Scanner(System.in);
 
-        double coeficienteA;
-        double coeficienteB;
-        double coeficienteC;
+        double coeficienteA, coeficienteB, coeficienteC;
         double delta;
-        double raizBhaskaraPosistiva;
-        double raizBhaskaraNegativa;
+        double raizBhaskaraPosistiva, raizBhaskaraNegativa;
 
         System.out.println("\nEntre com o Coeficinete de A: ");
         coeficienteA = scan.nextDouble();
